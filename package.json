@@ -1,0 +1,19 @@
+{
+  "name": "electrum-utils",
+  "version": "0.0.1",
+  "description": "Utilities for Electrum.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epsitec-sa/electrum-utils.git"
+  },
+  "author": "Epsitec SA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epsitec-sa/electrum-utils/issues"
+  },
+  "homepage": "https://github.com/epsitec-sa/electrum-utils"
+}
