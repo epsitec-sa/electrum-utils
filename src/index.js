@@ -3,7 +3,7 @@
 /*****************************************************************************/
 
 module.exports = {
-  getTextSelection: require ('./modules/get-text-selection.js'),
+  getTextSelection: require ('./get-text-selection.js'),
 };
 
 /*****************************************************************************/

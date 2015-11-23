@@ -12,12 +12,9 @@ module.exports = function getTextSelection (el) {
       ((/text|password|search|tel|url/).test (el.type)) &&
       (typeof el.selectionStart === 'number') &&
       (typeof el.selectionEnd === 'number')) {
-
     start = el.selectionStart;
     end   = el.selectionEnd;
-
   } else {
-
     range = document.selection && document.selection.createRange ();
 
     if (range && range.parentElement () === el) {
