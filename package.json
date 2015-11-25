@@ -1,6 +1,6 @@
 {
   "name": "electrum-utils",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "Utilities for Electrum.",
   "main": "src/index.js",
   "scripts": {
