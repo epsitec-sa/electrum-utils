@@ -12,6 +12,9 @@ provided by these utility functions.
   a `from` and a `to` position. Example selection: `{from: 3, to: 8}`. Cursor
   position without selection: `from: 3, to: 3}`.
 
+* `shallowEqual (objA, objB)` &rarr; returns `true` if both objects contain the
+  same keys and values (the comparison is done by reference equality).
+
 * `startsWithLowerCase (string)` &rarr; returns `true` if the text starts with a
   lower case character (**a-z**, no accented characters).
 
