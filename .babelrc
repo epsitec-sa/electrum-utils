@@ -1,11 +1,11 @@
 {
-  "presets": ["stage-0", "es2015", "react"],
-  "env": {
-    "test": {
-      "plugins": []
-    },
-    "development": {
-      "plugins": []
-    }
-  }
+  "presets": [
+    "stage-0",
+    "node5",
+    "react"
+  ],
+  "plugins": [
+    "transform-react-display-name",
+    "transform-decorators"
+  ]
 }
