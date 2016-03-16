@@ -6,6 +6,8 @@
   ],
   "plugins": [
     "transform-react-display-name",
-    "transform-decorators"
+    "transform-decorators",
+    "transform-class-properties",
+    "transform-es2015-classes"
   ]
 }

@@ -4,7 +4,8 @@
   "description": "Utilities for Electrum.",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/test/**/*.js"
+    "prepublish": "require-self",
+    "test": "mocha src.test/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -17,17 +18,10 @@
   },
   "homepage": "https://github.com/epsitec-sa/electrum-utils",
   "devDependencies": {
-    "babel-cli": "^6.4.5",
-    "babel-core": "^6.4.5",
-    "babel-plugin-transform-decorators": "^6.4.0",
-    "babel-polyfill": "^6.3.14",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-node5": "^10.5.0",
-    "babel-preset-stage-0": "^6.3.13",
-    "chai": "^3.5.0",
-    "jsdom": "^8.0.2",
-    "mai-chai": "^1.1.2",
-    "mocha": "^2.4.5",
-    "react": "^0.14.7"
+    "babel-env": "^1.1.0",
+    "generic-js-env": "^1.1.0",
+    "mai-chai": "^2.4.0",
+    "react": "^0.14.7",
+    "require-self": "^0.1.0"
   }
 }

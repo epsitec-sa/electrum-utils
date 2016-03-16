@@ -2,7 +2,7 @@
 
 import {expect} from 'mai-chai';
 
-import {parsePositiveInt, isPositiveInt} from '../index.js';
+import {parsePositiveInt, isPositiveInt} from 'electrum-utils';
 
 describe ('Utilities', () => {
   describe ('parsePositiveInt()', () => {
