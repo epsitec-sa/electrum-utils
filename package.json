@@ -1,11 +1,16 @@
 {
   "name": "electrum-utils",
-  "version": "1.6.2",
+  "version": "1.6.3",
   "description": "Utilities for Electrum.",
   "main": "src/index.js",
   "scripts": {
-    "prepublish": "require-self",
-    "test": "mocha src.test/**/*.js"
+    "babel": "babel --quiet --out-dir lib src && babel --quiet --out-dir lib.test src.test",
+    "clean": "rimraf ./lib && rimraf ./lib.test",
+    "compile": "npm run clean && require-self && npm run eslint && npm run babel",
+    "eslint": "eslint src src.test",
+    "mocha": "mocha lib.test/**/*.js",
+    "prepublish": "npm run compile",
+    "test": "npm run compile && npm run mocha"
   },
   "repository": {
     "type": "git",
@@ -18,10 +23,12 @@
   },
   "homepage": "https://github.com/epsitec-sa/electrum-utils",
   "devDependencies": {
-    "babel-env": "^1.6.0",
-    "generic-js-env": "^1.9.2",
+    "babel-env": "^2.3.1",
+    "generic-js-env": "^2.2.0",
     "mai-chai": "^3.3.2",
     "react": "^15.4.2",
-    "require-self": "^0.1.0"
+    "react-dom": "^15.4.2",
+    "require-self": "^0.1.0",
+    "rimraf": "^2.6.1"
   }
 }
