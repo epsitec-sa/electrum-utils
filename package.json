@@ -1,8 +1,8 @@
 {
   "name": "electrum-utils",
-  "version": "1.6.3",
+  "version": "1.6.4",
   "description": "Utilities for Electrum.",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "scripts": {
     "babel": "babel --quiet --out-dir lib src && babel --quiet --out-dir lib.test src.test",
     "clean": "rimraf ./lib && rimraf ./lib.test",
