@@ -1,6 +1,4 @@
-'use strict';
-
-function parsePositiveInt (value) {
+export function parsePositiveInt (value) {
   if (typeof value === 'number') {
     if (Number.isSafeInteger (value) && value >= 0) {
       return value;
@@ -18,11 +16,6 @@ function parsePositiveInt (value) {
   return NaN;
 }
 
-function isPositiveInt (value) {
+export function isPositiveInt (value) {
   return !isNaN (parsePositiveInt (value));
 }
-
-module.exports = {
-  parsePositiveInt: parsePositiveInt,
-  isPositiveInt: isPositiveInt
-};

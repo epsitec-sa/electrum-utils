@@ -1,5 +1,3 @@
-'use strict';
-
 /******************************************************************************/
 
 function isMethod (obj, name) {
@@ -9,7 +7,7 @@ function isMethod (obj, name) {
 
 /******************************************************************************/
 
-module.exports = function getInstanceMethodNames (obj, stop) {
+export function getInstanceMethodNames (obj, stop) {
   var array = [];
   var proto = Object.getPrototypeOf (obj);
   var handle = function (name) {
@@ -22,6 +20,6 @@ module.exports = function getInstanceMethodNames (obj, stop) {
     proto = Object.getPrototypeOf (proto);
   }
   return array;
-};
+}
 
 /******************************************************************************/

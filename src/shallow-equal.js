@@ -1,17 +1,15 @@
-'use strict';
-
 // Original source code found in fbjs/lib/shallowEqual
 
 /******************************************************************************/
 
-var hop = Object.prototype.hasOwnProperty;
+const hop = Object.prototype.hasOwnProperty;
 
-/**
+/*
  * Performs equality by iterating through keys on an object and returning false
  * when any key has values which are not strictly equal between the arguments.
  * Returns true when the values of all keys are strictly equal.
  */
-function shallowEqual (objA, objB) {
+export function shallowEqual (objA, objB) {
   if (objA === objB) {
     return true;
   }
@@ -44,5 +42,3 @@ function shallowEqual (objA, objB) {
 }
 
 /******************************************************************************/
-
-module.exports = shallowEqual;

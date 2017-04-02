@@ -1,8 +1,6 @@
-'use strict';
-
 /******************************************************************************/
 
-module.exports = function getTextSelection (el) {
+export function getTextSelection (el) {
   // http://stackoverflow.com/questions/12194113
 
   var start = 0, end = 0;
@@ -48,6 +46,6 @@ module.exports = function getTextSelection (el) {
   }
 
   return {from: start, to: end};
-};
+}
 
 /******************************************************************************/

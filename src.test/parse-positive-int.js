@@ -1,8 +1,10 @@
-'use strict';
+/* global describe it */
+/* eslint new-cap: 0 */
 
 import {expect} from 'mai-chai';
-
 import {parsePositiveInt, isPositiveInt} from 'electrum-utils';
+
+/******************************************************************************/
 
 describe ('Utilities', () => {
   describe ('parsePositiveInt()', () => {
@@ -49,3 +51,5 @@ describe ('Utilities', () => {
     });
   });
 });
+
+/******************************************************************************/
