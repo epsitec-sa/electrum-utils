@@ -1,3 +1,5 @@
+/* global document */
+
 /******************************************************************************/
 
 export function getTextSelection (el) {
